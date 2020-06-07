@@ -1,9 +1,9 @@
-import { MessageTarget } from "../shared/message/MessageTarget";
-import { BackgroundMessageType } from "../shared/message/MessageType";
+import { MessageTarget } from '../shared/message/MessageTarget';
+import { BackgroundMessageType } from '../shared/message/MessageType';
 import {
   bindMessageHandlers,
-  MessageHandler
-} from "../shared/message/MessageHandler";
+  MessageHandler,
+} from '../shared/message/MessageHandler';
 
 const messageHandlers: Array<{
   type: BackgroundMessageType;
@@ -14,7 +14,7 @@ const messageHandlers: Array<{
     type: BackgroundMessageType.SayHello,
     handler: (sendResponse: any, payload: { name: string }) => {
       console.log(`Hello, ${payload.name}`);
-    }
+    },
   },
 ];
 

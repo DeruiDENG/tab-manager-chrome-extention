@@ -1,11 +1,11 @@
-@import "utils";
+@import 'utils';
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  min-width: rem-calc(400);
+  min-width: rem-calc(600);
   padding: rem-calc(16);
 }
 
